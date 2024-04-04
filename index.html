@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Banking System</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Banking System</h1>
+
+  <div>
+    <h2>Create Account</h2>
+    <form id="create-account-form">
+      <label for="account-type">Account Type:</label>
+      <select id="account-type" name="account-type">
+        <option value="regular">Regular</option>
+        <option value="savings">Savings</option>
+      </select><br>
+      <label for="account-number">Account Number:</label>
+      <input type="text" id="account-number" name="account-number"><br>
+      <label for="initial-balance">Initial Balance:</label>
+      <input type="number" id="initial-balance" name="initial-balance"><br>
+      <button type="submit">Create Account</button>
+    </form>
+  </div>
+
+  <div>
+    <h2>Make Deposit</h2>
+    <form id="deposit-form">
+      <label for="deposit-account-number">Account Number:</label>
+      <input type="text" id="deposit-account-number" name="deposit-account-number"><br>
+      <label for="deposit-amount">Deposit Amount:</label>
+      <input type="number" id="deposit-amount" name="deposit-amount"><br>
+      <button type="submit">Deposit</button>
+    </form>
+  </div>
+  <div class="container">
+    <h2>Make Withdrawal</h2>
+    <form id="withdraw-form">
+      <label for="withdraw-account-number">Account Number:</label>
+      <input type="text" id="withdraw-account-number" name="withdraw-account-number" required><br>
+      <label for="withdraw-amount">Withdraw Amount:</label>
+      <input type="number" id="withdraw-amount" name="withdraw-amount" required><br>
+      <button type="submit">Withdraw</button>
+    </form>
+  </div>
+
+  
+
+  <div id="accounts-container">
+    <!-- Accounts will be dynamically added here -->
+  </div>
+
+  <script src="account.js"></script>
+  <script src="savingsAccount.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
